@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/ip_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ip_message" 
+        android:maxLines="1"
+        android:inputType="phone" />
+    
+    <EditText
+        android:id="@+id/port_message"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/port_message" 
+        android:maxLines="1"
+        android:inputType="phone"/>
+    
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_button"
+        android:onClick="serverConnect" 
+        android:id="@+id/connect_button"
+        />
+     
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disconnect_button"
+        android:onClick="serverDisconnect"
+        android:visibility="gone" 
+        android:id="@+id/disconnect_button"
+        />
+     
+     <View
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+         android:layout_marginTop="2dp"
+         android:layout_marginBottom="2dp"
+         android:background="@android:color/darker_gray" />
+     
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/action_text"
+         android:text="@string/action_text"
+         android:textSize="20sp" 
+         android:gravity="center_horizontal"
+         android:layout_marginBottom="4dp"
+         android:visibility="gone" />
+         
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restart_button"
+        android:onClick="sendRestart" 
+        android:visibility="gone"
+        android:id="@+id/restart_button" />
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shutdown_button" 
+        android:onClick="sendShutdown" 
+        android:visibility="gone" 
+        android:id="@+id/shutdown_button"/>
+    
+    
+    
+</LinearLayout>

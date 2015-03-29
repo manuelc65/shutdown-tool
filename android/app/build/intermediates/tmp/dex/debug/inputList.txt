@@ -1,0 +1,2 @@
+F:\Development\ShutdownToolNEW\app\build\intermediates\classes\debug
+F:\Development\ShutdownToolNEW\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-07227a6cbf9c77e367d9dfa429122bfb85f0f19e.jar
